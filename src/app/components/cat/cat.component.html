@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="col-8 offset-2">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Fact</th>
+                </tr>
+            </thead>
+            <tr *ngFor="let fact of cats, let indexOfElement=index">
+                <td>{{indexOfElement + 1}}</td>
+                <td>{{fact.text}}</td>
+            </tr>
+        </table>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-secondary" routerLink="">Back</button>
+        </div>
+    </div>
+</div>

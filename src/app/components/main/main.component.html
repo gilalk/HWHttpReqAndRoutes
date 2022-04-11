@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="col-8 offset-2">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img src="./assets/pics/dog.jpg" class="rounded" width="750px" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Dog</h3>
+          <button class="btn btn-warning"
+          routerLink="/dog">Get a Dog</button>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img src="./assets/pics/cat.jpg" class="rounded" width="750px" alt="Random second slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Cat</h3>
+          <button class="btn btn-light"
+          routerLink="/cat">Get a Cat</button>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img src="./assets/pics/fox.jpg" class="rounded" width="750px" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h1>Fox</h1>
+          <button class="btn btn-dark"
+          routerLink="/fox">Get a Fox</button>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>

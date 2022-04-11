@@ -1,0 +1,13 @@
+<div class="container mt-4">
+    <div class="col-8 offset-4">
+        <div class="card" style="width: 18rem;">
+            <img *ngIf="isSubmitted" src="{{dogs.message}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dog</h5>
+              <p class="card-text">Wet Dog</p>
+              <button class="btn btn-primary" (click)="onGetPic()">Show</button>
+              <button class="btn btn-secondary" routerLink="">Back</button>
+            </div>
+          </div>
+    </div>
+</div>
